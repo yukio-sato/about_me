@@ -1,0 +1,248 @@
+/* Raw Elements */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    font-size: 100%;
+}
+
+body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    box-shadow: inset white 0px 0px 0px 5px;
+    background-color: black;
+}
+
+img{
+    pointer-events: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    box-shadow: inset white 0px 0px 1px 5px;
+    background-color: black;
+}
+
+h1{
+    font-size: larger;
+}
+
+hr{
+    width: 100%;
+}
+
+/* Class */
+
+.big{
+    font-size: x-large;
+}
+
+.realBody{
+    margin: 2.5%;
+    margin-top: 66px;
+    margin-bottom: 66px;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.insiderBox{
+    margin: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: start;
+    width: 96%;
+    height: 25%;
+}
+
+.credit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.roundedImg{
+    border-radius: 10px;
+    box-shadow: rgba(255,255,255,0.25) 0px 5px 10px 2px;
+}
+
+.customImg{
+    margin: 2%;
+    width: 45%;
+    height: 100%;
+    max-width: 200px;
+}
+
+.customImg2{
+    margin-top: 1%;
+    height: 100%;
+    width: 98%;
+}
+
+.gamesPic{
+    margin: 1%;
+    width: 48%;
+    height: 10%;
+}
+
+.isColumn{
+    margin: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 98%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.iconTxt{
+    width: 30%;
+    margin-bottom: 0;
+}
+
+.leftTxt{
+    margin: 1%;
+    width: 98%;
+    height: 100%;
+}
+
+.centerTxt{
+    margin: 1%;
+    height: 100%;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+.headItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    width: 33.6%;
+    height: 100%;
+    transition: all 0.25s linear;
+    box-shadow: inset white 0px 0px 1px 5px;
+}
+
+.topic{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    text-align: start;
+}
+
+.scrollmenu {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.scrollItem{
+    scroll-snap-align: start; 
+    border-radius: 25px;
+    margin-right: 20px;
+    flex: 0 0 auto; 
+    width: 100%;
+}
+
+/* Events */
+
+.headItem:hover{
+    color: yellow;
+    background: linear-gradient(to left,transparent,rgba(255,255,0,0.1),transparent) no-repeat;
+    box-shadow: inset yellow 0px 0px 1px 5px;
+    text-shadow: yellow 0px 0px 6px;
+}
+
+::-webkit-scrollbar {
+    width: 100%;
+    height: 10px;    
+}
+  
+::-webkit-scrollbar-track {
+    width: 100%;
+    background: rgb(66, 66, 66);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128,0.5);
+    border-radius: 10px;
+}
+
+/* Media */
+
+@media (max-width: 546px){
+    .insiderBox{
+        margin: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+        height: 25%;
+    }
+    .iconTxt{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        width: 95%;
+    }
+    .leftTxt{
+        width: 100%;
+        margin: 0%;
+    }
+}
